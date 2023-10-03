@@ -28,5 +28,11 @@ namespace MarketOtomasyonu
             UrunFormu ur = new UrunFormu();
             ur.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SatisFormu frm = new SatisFormu();
+            frm.ShowDialog();
+        }
     }
 }
