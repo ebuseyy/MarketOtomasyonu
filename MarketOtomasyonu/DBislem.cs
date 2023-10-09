@@ -11,7 +11,7 @@ namespace MarketOtomasyonu
 
     internal class DBislem
     {
-        SqlConnection baglanti = new SqlConnection("server=DESKTOP-520STTO; database=marketoto; user id=sa; password=12345;");
+        SqlConnection baglanti = new SqlConnection("server=yourservername; database=marketoto; user id=userid; password=yourpass;");
 
         public void CreateUpdateDelete(string sql,string mesaj)
         {
