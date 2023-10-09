@@ -15,7 +15,12 @@ namespace MarketOtomasyonu
         private void button1_Click(object sender, EventArgs e)
         {
 
-            db.CreateUpdateDelete("insert into T_URUN (adi,aciklama) values('" + textBox1.Text + "','" + textBox2.Text + "')","Ürün Kayýt Baþarýlý");
+
+            DataTable dt1 = db.getir("exec Sp_UrunIsýmKontrol '" + textBox1.Text + "','" + textBox2.Text + "'");
+
+
+            MessageBox.Show(dt1.Rows[0][0].ToString());
+
             verigetirurun();
 
 
